@@ -1,0 +1,124 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yamlin.search.image.googleimagesearch.EditOptionDialog">
+
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/search_layout0"
+    android:layout_gravity="center"
+    android:gravity="center|center_vertical">
+    <TextView android:text="@string/text_search_option_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@android:color/holo_blue_dark"
+    android:textSize="30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/search_layout1"
+    android:layout_below="@+id/search_layout0"
+    android:layout_gravity="center"
+    android:gravity="center|center_vertical">
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/text_search_option_size"
+    android:textColor="@android:color/holo_blue_dark"
+    android:textSize="20dp" />
+    <Spinner
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/spannerSize">
+    </Spinner>
+
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/search_layout2"
+    android:layout_below="@+id/search_layout1"
+    android:layout_gravity="center">
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/text_search_option_color"
+    android:textColor="@android:color/holo_blue_dark"
+    android:textSize="20dp" />
+    <Spinner
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/spannerColor">
+    </Spinner>
+
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/search_layout3"
+    android:layout_below="@+id/search_layout2"
+    android:layout_gravity="center">
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/text_search_option_type"
+    android:textColor="@android:color/holo_blue_dark"
+    android:textSize="20dp" />
+    <Spinner
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/spinnerType">
+    </Spinner>
+
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/search_layout4"
+    android:layout_below="@+id/search_layout3"
+    android:layout_gravity="center">
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/text_search_option_site"
+    android:textColor="@android:color/holo_blue_dark"
+    android:textSize="20dp" />
+    <EditText
+    android:layout_width="257dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/etSearchSite" />
+
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/search_layout5"
+    android:layout_below="@+id/search_layout4"
+    android:layout_gravity="center">
+    <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffbeff8f"
+    android:textSize="20dp"
+    android:textAlignment="center"
+    android:text="@string/text_save"
+    android:id="@+id/btnSave" />
+
+    <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffbeff8f"
+    android:textSize="20dp"
+    android:textAlignment="center"
+    android:text="@string/text_cancel"
+    android:layout_marginLeft="10dp"
+    android:id="@+id/btnCancel" />
+    </LinearLayout>
+</FrameLayout>
